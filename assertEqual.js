@@ -1,4 +1,4 @@
-const assertEqual = (actual, expected) => {
+module.exports = assertEqual = (actual, expected) => {
   const results = [["✅", "Passed", '='], ["🛑", "Failed", '!']];
   let result;
 
@@ -6,8 +6,3 @@ const assertEqual = (actual, expected) => {
   else result = results[1];
   console.log(`${result[0]} Assertion ${result[1]}: ${actual} ${result[2]}== ${expected}`);
 };
-
-assertEqual("a", "a");
-assertEqual("a", "b");
-assertEqual(1, 1);
-assertEqual(1, 0);
