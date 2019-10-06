@@ -1,4 +1,4 @@
-const eqArrays = require("eqArrays");
+const eqArrays = require("./eqArrays.js");
 
 const assertArraysEqual = (actual, expected) => {
   const results = [["✅", "Passed", '='], ["🛑", "Failed", '!']];
