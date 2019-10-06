@@ -1,8 +1,8 @@
 const flatten = array => {
-  const output = [];
+  let output = [];
   for (let element of array) {
     if (Array.isArray(element)) {
-      output.concat(flatten(element));
+      output = output.concat(element);
     } else {
       output.push(element);
     }
@@ -11,3 +11,5 @@ const flatten = array => {
 };
 
 module.exports = flatten;
+
+console.log(JSON.stringify(flatten([1, 2, [3, 4], 5, [6]])))
