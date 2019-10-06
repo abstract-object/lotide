@@ -11,5 +11,3 @@ const flatten = array => {
 };
 
 module.exports = flatten;
-
-console.log(JSON.stringify(flatten([1, 2, [3, 4], 5, [6]])))
