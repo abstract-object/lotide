@@ -13,4 +13,4 @@ const countLetters = sentence => {
   return output;
 };
 
-exports.module = countLetters;
+module.exports = countLetters;
